@@ -1,0 +1,21 @@
+/* element 
+class 
+id 
+group  */
+/* this is the elemt selector use for slect on basis of the element like parra heading and all */
+p{
+    color :brown
+}
+/* id coloring is the way using wich we can do coloring using the id  */
+#Artical1{
+    color : sienna
+}
+.parra{
+    background-color: yellow;
+}
+p,article{
+    width   : 500px;
+}
+p.parra{
+    text-align: center;
+}
