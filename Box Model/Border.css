@@ -1,0 +1,55 @@
+#heading{
+    /* /* we use the border style for the define the sytel of the border* / */
+    border-style : dashed ;
+    /* we use the border-width for the give the size to the border */
+    border-width : 1px;
+    border-color : brown;
+    /* now short form for ti */
+    border: solid 1px brown;
+    /* how to add the rounded corner fo the border for the all of the corner */
+    border-radius: 5px;
+    background-color: springgreen;
+    width :  350px;
+
+   
+}
+#one{
+    border: solid 1px brown;
+    /* this will round the left top corner */
+    border-top-left-radius: 5px;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    /* how to set the width and hight of the box */
+    width: 500px;
+
+}
+#two{
+    border: solid 1px brown;
+    /* this will round the left top corner */
+    border-top-left-radius: 5px;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    /* how to set the width and hight of the box */
+    width: 500px;
+
+}
+#three{
+    border: solid 1px brown;
+    /* this will round the left top corner */
+    border-top-left-radius: 5px;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    /* how to set the width and hight of the box */
+    width: 500px;
+
+}
+#four{
+    border: solid 1px brown;
+    /* this will round the left top corner */
+    border-top-left-radius: 5px;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    /* how to set the width and hight of the box */
+    width: 500px;
+
+}

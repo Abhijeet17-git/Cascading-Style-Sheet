@@ -1,0 +1,17 @@
+#heading{
+    border:solid 3px brown;
+    color : green   ;
+    /* padding mean the space between the border and the content */
+    width:210px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    /*Shortcut for the padding top , right,bottom,left ;padding:top,ritht,bottom.left*/
+    margin-left:190px;
+
+}
+*{
+    background-color: rgb(109, 109, 66);
+}
+    

@@ -1,0 +1,41 @@
+#one{
+    /* use fot he making the font bigger */
+    font-size: large;
+    /* use for the making the text bold , underline and italic */
+    font-style: italic; 
+    /* use for the chossing the famiily of the font's */
+    /* font-family: unset;  */
+    /* using this we can make the our text more dark of the light using the font-waight */
+    font-weight: 900;
+    /* line hight uisng this we can adjust the spacing between the two of the line */
+    /* line-height: 89px; */
+    /* this is the direct coloring */
+    color : green;
+}
+#two{
+    /* using this we pick the color using the rgb value and fourth one is for the alpha mean the transperency of color */
+    background-color: rgba(40, 151, 105, 0.553) ;
+
+}
+#three{
+    /* using the hexadedimal value that we got from the web  */
+    color : #4e4eba8b; 
+}
+#four{
+    /* hsl(hue , saturation , ligithing) color this is use for the  */
+     
+
+}
+/* how to add the font fot he googel to the CSS */
+.playwrite-gb-j-guides-regular {
+  font-family: "Playwrite GB J Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#one,#two,#three,#four {
+  font-family: "Playwrite GB J Guides", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
