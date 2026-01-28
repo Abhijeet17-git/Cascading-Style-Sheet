@@ -1,0 +1,13 @@
+/* display this is the funtino wich tell the browser that how we are going to render that element on the website */
+
+/* "display : vlaue "  this is the syntax of the element  */
+*{
+    box-sizing: border-box; /*this is the structure wich is tell compiler when i add padiing or border make the content small but not make box big*/
+}
+/*
+display:block;  use when we want to convert the inline to block
+display:inline;    use when we want to convert the block to inline
+display:inline-block; use when we want property of the both block inline same line but width hight padding margin accpected 
+display:none; use when we want to jut hide complete element
+visibilyty: hidden  when we want to hided element but want there space there
+*/ 

@@ -1,0 +1,35 @@
+/* we have the so much element and we have to decide how do we want to place the our element on website */
+/* Type of the positioning */
+/* static:- top right left bottom wont workd
+relative:- here all work the space of the element is intact not taken by the another element based on the curent space
+absolute:- here the element is positioned according to the its nearest ensiter here is the div first they overlapped gap not mentatined
+fixed 
+stickey */
+/*
+top
+right 
+left
+bottom
+*/
+div{
+    border: 1px solid black;
+    position: relative;
+    top:100px;
+}
+.img{
+    margin : 20px;
+}
+.img1{
+    position: relative; 
+
+}
+.img2{
+    position: absolute;
+    top:500px;
+
+}
+.img3{
+    position:fixed ;
+
+}
+
