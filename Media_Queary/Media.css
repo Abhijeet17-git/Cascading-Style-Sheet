@@ -1,0 +1,116 @@
+/* =========================================
+   1. THE "PRO" RESET
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sure padding doesn't break your 100% width */
+}
+
+:root {
+    --bg-color: antiquewhite;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+    --accent: #d35400;
+}
+
+/* =========================================
+   2. MAKING IT FILL THE SCREEN
+   ========================================= */
+html, body {
+    height: 100%; /* Forces the page to be at least as tall as the screen */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stacks Navbar, Hero, Main, and Footer */
+}
+
+/* =========================================
+   3. NAVIGATION (Flexbox)
+   ========================================= */
+.navbar {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column; /* Mobile: Logo on top of links */
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* =========================================
+   4. THE MAIN CONTENT (The "Filled" part)
+   ========================================= */
+.grid-container {
+    flex: 1; /* This is the MAGIC: it pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column; /* Mobile: stack cards */
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1; /* Mobile: cards grow to fill vertical space if screen is tall */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* =========================================
+   5. MEDIA QUERY: TABLET/DESKTOP
+   ========================================= */
+@media (min-width: 768px) /*after this width it will never we layout*/ {
+    .navbar {
+        flex-direction: row; /* Desktop: Logo left, Links right */
+        justify-content: space-between;
+    }
+
+    .grid-container {
+        flex-direction: row; /* Desktop: Cards side-by-side */
+    }
+
+    .card {
+        flex: 1; /* Desktop: Cards share width equally */
+    }
+}
+
+/* =========================================
+   6. DARK MODE & EXTRA FEATURES
+   ========================================= */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #f1f1f1;
+        --card-bg: #2d2d2d;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.05);
+}
+/* This effect will NOT happen on iPhones or Androids */
+@media (hover: hover) {
+    .card:hover {
+        background-color: var(--accent);
+        transform: scale(1.05);
+        transition: 0.5s;
+        cursor:pointer;
+    }
+}
