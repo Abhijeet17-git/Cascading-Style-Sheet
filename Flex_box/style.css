@@ -1,0 +1,58 @@
+/* CONTAINER: The Parent Box */
+.container {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 10px;
+    min-height: 1000px; /* Added height so you can see vertical alignment later */
+    
+    /* 1. ACTIVATE FLEXBOX */
+    display: flex; 
+
+    /* 2. FLOW: Direction + Wrap (Shorthand)
+       row-reverse: Items start from right to left.
+       wrap: Items jump to next line if screen is narrow. */
+    flex-flow: row-reverse wrap;
+
+    /* 3. HORIZONTAL ALIGNMENT (Main Axis) 
+       Uncomment ONLY ONE of these at a time to see how it works: */
+    
+    /* justify-content: flex-start;    -> Items at the right (because of row-reverse) */
+    /* justify-content: flex-end;      -> Items at the left (because of row-reverse) */
+    /* justify-content: center;        -> Items in the dead center */
+    /* justify-content: space-around;  -> Equal space AROUND each box */
+    justify-content: space-between;    /* First and Last boxes touch the edges */
+    /* align-items:stretch; this is use for the strech the element from the top to bootom of the center */
+    /* align-items:flex-end; this will use the place the iteam at bootm most position */
+    /* align-items:flex-start; this will use the place iteam at top most of the center */
+    align-items: center; 
+    /* NOTE: justify-items DOES NOT work in Flexbox. 
+       It is for CSS Grid. I am removing it to keep code clean. */
+    /* align-content:center;this is the property wehre we are having the  content using this we can handel indivisual row or itema we need atlean 2-3 row have same property as the aling iteams
+ */
+}
+
+/* BOX: General styles for all children */
+.box {
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex; /* Centering text inside the boxes */
+    justify-content: center;
+    align-items: center;
+}
+
+/* INDIVIDUAL BOX PROPERTIES */
+#box1 {
+    background-color: blue;
+    
+    /* SHORTHAND: flex: [grow] [shrink] [basis] */
+    /* Grow: 1 (Take extra space), Shrink: 1 (Squeeze if needed), Basis: 200px (Start size) */
+    flex: 1 1 200px; 
+}
+
+#box2 { background-color: orange;align-self: stretch; /*in aling self we give whatever we want any value it can brrack tule specified in the parent*/ }
+#box3 { background-color: green; }
+#box4 { background-color: red; order: 5;/*ordei s use for give the priority to the any iteamss̄*/}

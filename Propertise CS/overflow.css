@@ -1,0 +1,25 @@
+/*chcke the index1.html for the checking the site*/
+/* Styling the boxes so we can see them clearly */
+.container {
+    width: 200px;
+    height: 100px; /* The box is small */
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    margin-bottom: 80px; /* Space between boxes */
+    padding: 10px;
+}
+
+/* 1. Content spills out */
+.visible {
+    overflow: visible;
+}
+
+/* 2. Content is cut off */
+.hidden {
+    overflow: hidden;
+}
+
+/* 3. Adds scrollbars ONLY if needed */
+.auto {
+    overflow: auto;
+}

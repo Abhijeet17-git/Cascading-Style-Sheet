@@ -1,0 +1,48 @@
+/* its is an the flexibal Box use for desing the 1 D box */
+.container{
+    background-color: beige;
+    border : 1px solid black;
+    padding : 2px;
+    display: flex; /*this use for convert the element in the borderin the the smae line any row or coloums*/
+    flex-direction:column; /*for give the direction of the row verically coloums wise*/
+    flex-wrap:wrap; /*This funtino is use when the size of the display reduse how would the element got alinged*/
+    flex-flow:row-reverse wrap;/*this is the short hand expresion */;
+    /* ---------------------------- */
+    justify-content: flex-end;  /*this set the all content to the extream end of the flex*/
+    justify-content: flex-start; /*this set the all content to the extream start of the flex*/
+    justify-content: center; /*this set the all content to the center*/
+    justify-content: space-between; /*this set the all content e*/
+    justify-content: space-around; /*Everything is getting equall space around them*/
+    justify-content: space-between; /*this set the all content first and last box at extream and make them equally spaced*/
+    justify-items: auto;
+
+}
+.box{
+    height: 200px;
+    width:  200px;
+    border : 2px solid brown;
+    margin:2px;
+}
+#box1{
+    /* 1. Starting Size: "I want to start at 500px" */
+    flex-basis: 200px; 
+
+    /* 2. Growth: "If there is extra space, I am willing to grow to fill it" */
+    /* (1 means yes, 0 means no) */
+    flex-grow: 1; 
+
+    /* 3. Shrink: "If the screen gets tiny, shrink me at a normal rate" */
+    /* (Use 1 for yes, 0 for 'never shrink', or 2 to shrink twice as fast) */
+    flex-shrink: 1; 
+    /* Short hand for it is /* flex: [grow] [shrink] [basis]  */
+    background-color: blue;
+}
+#box2{
+    background-color: orange;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: red;
+}
